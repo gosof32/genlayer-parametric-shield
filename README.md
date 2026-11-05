@@ -127,7 +127,7 @@ Near the threshold, honest validators can land on different sides. They then dis
 
 Deployed and run end to end on GenLayer Studionet against **live Open-Meteo data** for Pekanbaru, October 2026. Every transaction finalized with `MAJORITY_AGREE`.
 
-Contract: `0x62D6040b907DBeDCCC77a5C7956AFca61c06C6f7`
+Contract: `0x07453D65AbEBBD92477981feAd10473e8c173625`
 
 | Cover | Trigger | Source readings (archive default, archive ERA5, historical forecast) | Median | Result |
 |---|---|---|---|---|
@@ -138,7 +138,9 @@ The ERA5 model disagrees with the other two sources on both covers. The median a
 
 Negative paths were checked on-chain too: wrong premium, resolving twice, claiming a cover that didn't trigger, and claiming without a position all revert.
 
-All 14 transaction hashes, receipts, and the final contract state are in [`deployments/studionet.json`](deployments/studionet.json). To reproduce with throwaway keys:
+A third cover (heavy-rain day ≥ 50 mm, December 2026) stays open for buyers in the frontend: https://parametric-shield-dapp.vercel.app/ ([source](https://github.com/gosof32/parametric-shield-dapp)).
+
+All 15 transaction hashes, receipts, and the final contract state are in [`deployments/studionet.json`](deployments/studionet.json). To reproduce with throwaway keys:
 
 ```bash
 npm install

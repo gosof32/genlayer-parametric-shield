@@ -650,6 +650,7 @@ class ParametricShield(gl.Contract):
             "evidence_hash": c.evidence_hash,
             "attempts": int(c.attempts),
             "resolved_at": c.resolved_at,
+            "settled": c.settled,
             "holders": len(json.loads(self.holders.get(str(cover_id), "[]"))),
         }
 

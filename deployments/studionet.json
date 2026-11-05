@@ -1,13 +1,13 @@
 {
   "network": "studionet",
   "rpc": "https://studio.genlayer.com/api",
-  "contract": "0x62D6040b907DBeDCCC77a5C7956AFca61c06C6f7",
-  "generated_at": "2026-11-05T09:22:08.635Z",
+  "contract": "0x07453D65AbEBBD92477981feAd10473e8c173625",
+  "generated_at": "2026-11-05T09:44:20.895Z",
   "transactions": [
     {
       "label": "deploy contract",
-      "hash": "0x5b5c219a125095e28e4a1ec5834c8088e92575fa630167dc69d18264f09d6be2",
-      "from": "0xb461D3D4Ee578098E9A4B57dcB476d570DfDA7C7",
+      "hash": "0xaa8b6d7e803ced3e369938b734d28f1324908580501b743d3171640e222a312a",
+      "from": "0x45562E11D9A96FFD295d499A13746E7c31DD32af",
       "status": "FINALIZED",
       "consensus": "MAJORITY_AGREE",
       "execution": "SUCCESS",
@@ -17,8 +17,8 @@
     },
     {
       "label": "create_cover \"Pekanbaru heavy-rain day, Oct 2026\" (>= 15)",
-      "hash": "0x1b9b3c64d1e72b788e974a5a931192963a56570e9d49992595251ea6a60e7c72",
-      "from": "0xb461D3D4Ee578098E9A4B57dcB476d570DfDA7C7",
+      "hash": "0xc383bdb6ba3afb4c22d7a0f1262f990711a98e22dc407e9657e0e26ce1207d3c",
+      "from": "0x45562E11D9A96FFD295d499A13746E7c31DD32af",
       "status": "FINALIZED",
       "consensus": "MAJORITY_AGREE",
       "execution": "SUCCESS",
@@ -28,8 +28,8 @@
     },
     {
       "label": "create_cover \"Pekanbaru wet month, Oct 2026\" (>= 300)",
-      "hash": "0xd239e59c7df30d5ecb618dab799394fa8b4c111e8a321cee6dd31c5021be06ec",
-      "from": "0xb461D3D4Ee578098E9A4B57dcB476d570DfDA7C7",
+      "hash": "0xa3f4a0921408bcf6d4bb98b06e04ebf39e26028af1381744f4420c36471b2400",
+      "from": "0x45562E11D9A96FFD295d499A13746E7c31DD32af",
       "status": "FINALIZED",
       "consensus": "MAJORITY_AGREE",
       "execution": "SUCCESS",
@@ -39,8 +39,8 @@
     },
     {
       "label": "buy_cover #1 (100 units, premium 8000000)",
-      "hash": "0x942e86155b1c07b6266a6659b95d027e5861cfa7a9d7199907f5a39623afa83f",
-      "from": "0x9021DDd3e400f003D6c2a9C86cFc64e543E203B3",
+      "hash": "0x6b88af8625d559a87a07b69ff4992a3376577e72c5b621f0e5308fe430bcb93e",
+      "from": "0xfe2C40a2bb59181a46945B93ed46433182e2ee1b",
       "status": "FINALIZED",
       "consensus": "MAJORITY_AGREE",
       "execution": "SUCCESS",
@@ -50,8 +50,8 @@
     },
     {
       "label": "buy_cover #2 (100 units, premium 8000000)",
-      "hash": "0x30f47bf368d6cc032aa5b99a9befea408dfc8808a80f6a7a297d8400793bfbaa",
-      "from": "0x9021DDd3e400f003D6c2a9C86cFc64e543E203B3",
+      "hash": "0xc5ea60d1c293c15a855cc8420dec1b410a266e59f6bfa5307bc3fc8fc294748b",
+      "from": "0xfe2C40a2bb59181a46945B93ed46433182e2ee1b",
       "status": "FINALIZED",
       "consensus": "MAJORITY_AGREE",
       "execution": "SUCCESS",
@@ -61,8 +61,8 @@
     },
     {
       "label": "buy_cover #1 with wrong premium (must be rejected)",
-      "hash": "0x1313f2f8ac15374409e9921bef26d5f80cb51d9615bafd799de3de98e93ba455",
-      "from": "0x44Ffc4f959Bd435d231CA9865BF0481b18445F17",
+      "hash": "0xffefa4ae182a6d4397b3b89fbf58bbc2b0f31a35f8180635ec943fc26d40f44a",
+      "from": "0x9167c4B97772f67D7634a83953C38AFbD83F2F50",
       "status": "FINALIZED",
       "consensus": "MAJORITY_AGREE",
       "execution": "ERROR",
@@ -72,8 +72,8 @@
     },
     {
       "label": "resolve #1 (validators read 3 live Open-Meteo sources)",
-      "hash": "0x030e6f01cd51acea4dfbfa7b74ff6468dcdd62385afffeccc910c0a84116d421",
-      "from": "0x44Ffc4f959Bd435d231CA9865BF0481b18445F17",
+      "hash": "0xee18ee99f756412cf9639a3a8ec13d309b2e03c81fa22bf83d181b14354ecf51",
+      "from": "0x9167c4B97772f67D7634a83953C38AFbD83F2F50",
       "status": "FINALIZED",
       "consensus": "MAJORITY_AGREE",
       "execution": "SUCCESS",
@@ -83,8 +83,8 @@
     },
     {
       "label": "resolve #2 (validators read 3 live Open-Meteo sources)",
-      "hash": "0x94e9d0218e513b239d51d0894815b5b6c33ebf3a068fc4ec81440a052bd88afe",
-      "from": "0x44Ffc4f959Bd435d231CA9865BF0481b18445F17",
+      "hash": "0x3fd2254948366e2e4a6bcb6cf91e912abf3cdbc632355be685edc854b4acc46c",
+      "from": "0x9167c4B97772f67D7634a83953C38AFbD83F2F50",
       "status": "FINALIZED",
       "consensus": "MAJORITY_AGREE",
       "execution": "SUCCESS",
@@ -94,8 +94,8 @@
     },
     {
       "label": "resolve #1 again (must be rejected: already resolved)",
-      "hash": "0x1af9551af03adf63165acd774300ab1ddebdb08d3793ddd6517837fcc943b4e6",
-      "from": "0x44Ffc4f959Bd435d231CA9865BF0481b18445F17",
+      "hash": "0x6c416165e8322a9ae54bcd9ae999e446cd48ca04cf4057947c1cba10ca18b08f",
+      "from": "0x9167c4B97772f67D7634a83953C38AFbD83F2F50",
       "status": "FINALIZED",
       "consensus": "MAJORITY_AGREE",
       "execution": "ERROR",
@@ -105,8 +105,8 @@
     },
     {
       "label": "claim #1 by farmer (triggered: pays coverage)",
-      "hash": "0x4547309f48eab2b1d54528247d8244f4861c4c8803e1bc29b37d390cd26cc20b",
-      "from": "0x9021DDd3e400f003D6c2a9C86cFc64e543E203B3",
+      "hash": "0x1798d6602da15a853ed968f7c333b10f663bc6ec5a1e4b5bc85e804c254af306",
+      "from": "0xfe2C40a2bb59181a46945B93ed46433182e2ee1b",
       "status": "FINALIZED",
       "consensus": "MAJORITY_AGREE",
       "execution": "SUCCESS",
@@ -116,8 +116,8 @@
     },
     {
       "label": "claim #2 by farmer (must be rejected: did not trigger)",
-      "hash": "0x4a90d5d9c8bd495bd95c650cb4fb691a3fb86d3176eb35567b85cc70b79d9b1d",
-      "from": "0x9021DDd3e400f003D6c2a9C86cFc64e543E203B3",
+      "hash": "0x294fb6cf0c92a78c24655fce3cbc4fd12917dad3b893b978bfce3a720f2c6f81",
+      "from": "0xfe2C40a2bb59181a46945B93ed46433182e2ee1b",
       "status": "FINALIZED",
       "consensus": "MAJORITY_AGREE",
       "execution": "ERROR",
@@ -127,8 +127,8 @@
     },
     {
       "label": "claim #1 by outsider (must be rejected: no position)",
-      "hash": "0xc55541e2b3b5cf4f84bd05e25f7cc8349923d77f7268d5f92292f70c05fb7fec",
-      "from": "0x44Ffc4f959Bd435d231CA9865BF0481b18445F17",
+      "hash": "0xa4a9c66521cfc3c4c8f76cb201ef3eab3095babffc3cf01dddba2f4d6db8d7b9",
+      "from": "0x9167c4B97772f67D7634a83953C38AFbD83F2F50",
       "status": "FINALIZED",
       "consensus": "MAJORITY_AGREE",
       "execution": "ERROR",
@@ -138,8 +138,8 @@
     },
     {
       "label": "withdraw_underwriter #1 (capital + premiums - payout)",
-      "hash": "0x386afe60d87c66603933b23c7069449881be82c85df0875db382f59ee81926de",
-      "from": "0xb461D3D4Ee578098E9A4B57dcB476d570DfDA7C7",
+      "hash": "0x99a7b6c5979db0db662dc8003fd3a8067393c1e2ebba20257eed19c18e7a44c4",
+      "from": "0x45562E11D9A96FFD295d499A13746E7c31DD32af",
       "status": "FINALIZED",
       "consensus": "MAJORITY_AGREE",
       "execution": "SUCCESS",
@@ -149,13 +149,24 @@
     },
     {
       "label": "withdraw_underwriter #2 (capital + premiums)",
-      "hash": "0xaaa7583f7b61af8600b97c0254af1e654f4c75c631556a5ec0ab5e35ad5c3e85",
-      "from": "0xb461D3D4Ee578098E9A4B57dcB476d570DfDA7C7",
+      "hash": "0xaa9318a188895c87ba282c505aec8e4400490aa2b12453def765d025b1ce0393",
+      "from": "0x45562E11D9A96FFD295d499A13746E7c31DD32af",
       "status": "FINALIZED",
       "consensus": "MAJORITY_AGREE",
       "execution": "SUCCESS",
       "ok": true,
       "returnValue": "1008000000",
+      "expected_ok": true
+    },
+    {
+      "label": "create_cover \"Pekanbaru heavy-rain day, Dec 2026\" (open for the demo)",
+      "hash": "0x542533eb87fac5b303a3c9da3e941e4af6a15899ff91eb08eef929d977f83f44",
+      "from": "0x45562E11D9A96FFD295d499A13746E7c31DD32af",
+      "status": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "execution": "SUCCESS",
+      "ok": true,
+      "returnValue": "3",
       "expected_ok": true
     }
   ],
@@ -174,8 +185,9 @@
       "premium_bp": 800,
       "premiums": 8000000,
       "quorum": 2,
-      "resolve_deadline": "2026-11-06T09:16:46+00:00",
-      "resolved_at": "2026-11-05T09:17:02.888807+00:00",
+      "resolve_deadline": "2026-11-06T09:38:20+00:00",
+      "resolved_at": "2026-11-05T09:38:36.558824+00:00",
+      "settled": true,
       "sold": 100000000,
       "source_values": [
         "16.6",
@@ -204,9 +216,9 @@
       "threshold": "15",
       "title": "Pekanbaru heavy-rain day, Oct 2026",
       "tolerance_bp": 500,
-      "underwriter": "0xb461D3D4Ee578098E9A4B57dcB476d570DfDA7C7",
-      "window_end": "2026-11-05T09:16:46+00:00",
-      "window_start": "2026-11-05T09:15:46+00:00"
+      "underwriter": "0x45562E11D9A96FFD295d499A13746E7c31DD32af",
+      "window_end": "2026-11-05T09:38:20+00:00",
+      "window_start": "2026-11-05T09:37:20+00:00"
     },
     {
       "abs_tolerance": "1",
@@ -222,8 +234,9 @@
       "premium_bp": 800,
       "premiums": 8000000,
       "quorum": 2,
-      "resolve_deadline": "2026-11-06T09:16:46+00:00",
-      "resolved_at": "2026-11-05T09:17:44.116149+00:00",
+      "resolve_deadline": "2026-11-06T09:38:20+00:00",
+      "resolved_at": "2026-11-05T09:39:17.918799+00:00",
+      "settled": true,
       "sold": 100000000,
       "source_values": [
         "226.3",
@@ -252,9 +265,54 @@
       "threshold": "300",
       "title": "Pekanbaru wet month, Oct 2026",
       "tolerance_bp": 500,
-      "underwriter": "0xb461D3D4Ee578098E9A4B57dcB476d570DfDA7C7",
-      "window_end": "2026-11-05T09:16:46+00:00",
-      "window_start": "2026-11-05T09:15:46+00:00"
+      "underwriter": "0x45562E11D9A96FFD295d499A13746E7c31DD32af",
+      "window_end": "2026-11-05T09:38:20+00:00",
+      "window_start": "2026-11-05T09:37:20+00:00"
+    },
+    {
+      "abs_tolerance": "1",
+      "attempts": 0,
+      "capacity_left": 1000000000,
+      "capital": 1000000000,
+      "comparator": "gte",
+      "evidence_hash": "",
+      "holders": 0,
+      "id": 3,
+      "metric": "highest single-day rainfall in Pekanbaru from 2026-12-01 to 2026-12-31, in millimetres",
+      "observed": "",
+      "premium_bp": 800,
+      "premiums": 0,
+      "quorum": 2,
+      "resolve_deadline": "2027-01-07T23:59:59+00:00",
+      "resolved_at": "",
+      "settled": false,
+      "sold": 0,
+      "source_values": [],
+      "sources": [
+        {
+          "path": "daily.precipitation_sum",
+          "reducer": "max",
+          "url": "https://archive-api.open-meteo.com/v1/archive?latitude=0.51&longitude=101.45&start_date=2026-12-01&end_date=2026-12-31&daily=precipitation_sum&timezone=UTC"
+        },
+        {
+          "path": "daily.precipitation_sum",
+          "reducer": "max",
+          "url": "https://archive-api.open-meteo.com/v1/archive?latitude=0.51&longitude=101.45&start_date=2026-12-01&end_date=2026-12-31&daily=precipitation_sum&timezone=UTC&models=era5"
+        },
+        {
+          "path": "daily.precipitation_sum",
+          "reducer": "max",
+          "url": "https://historical-forecast-api.open-meteo.com/v1/forecast?latitude=0.51&longitude=101.45&start_date=2026-12-01&end_date=2026-12-31&daily=precipitation_sum&timezone=UTC"
+        }
+      ],
+      "sources_ok": 0,
+      "status": "OPEN",
+      "threshold": "50",
+      "title": "Pekanbaru heavy-rain day, Dec 2026",
+      "tolerance_bp": 500,
+      "underwriter": "0x45562E11D9A96FFD295d499A13746E7c31DD32af",
+      "window_end": "2026-12-31T23:59:59+00:00",
+      "window_start": "2026-12-01T00:00:00+00:00"
     }
   ]
 }

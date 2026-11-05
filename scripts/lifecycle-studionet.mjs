@@ -6,6 +6,7 @@
 // whole life against live Open-Meteo weather data for Pekanbaru, Riau (October 2026):
 //   Cover 1: highest daily rainfall >= 15 mm  -> expected TRIGGERED
 //   Cover 2: monthly rainfall total  >= 300 mm -> expected NOT_TRIGGERED
+// Finally it leaves one real cover (December 2026) open for the live demo.
 // Every transaction hash and its finalized status is written to
 // deployments/studionet.json. Throwaway keys are used (funded with
 // sim_fundAccount), so no real funds are involved.
@@ -102,6 +103,18 @@ await step("claim #2 by farmer (must be rejected: did not trigger)", farmer, wri
 await step("claim #1 by outsider (must be rejected: no position)", outsider, write(address, "claim", [1]), false);
 await step("withdraw_underwriter #1 (capital + premiums - payout)", underwriter, write(address, "withdraw_underwriter", [1]));
 await step("withdraw_underwriter #2 (capital + premiums)", underwriter, write(address, "withdraw_underwriter", [2]));
+
+// Leave a real, open cover on the contract for the live demo: December 2026, sold until Dec 1.
+const QD = "latitude=0.51&longitude=101.45&start_date=2026-12-01&end_date=2026-12-31&daily=precipitation_sum&timezone=UTC";
+await step('create_cover "Pekanbaru heavy-rain day, Dec 2026" (open for the demo)', underwriter, write(address, "create_cover", [
+  "Pekanbaru heavy-rain day, Dec 2026",
+  "highest single-day rainfall in Pekanbaru from 2026-12-01 to 2026-12-31, in millimetres",
+  "gte", "50", JSON.stringify([
+    { url: `https://archive-api.open-meteo.com/v1/archive?${QD}`, path: "daily.precipitation_sum", reducer: "max" },
+    { url: `https://archive-api.open-meteo.com/v1/archive?${QD}&models=era5`, path: "daily.precipitation_sum", reducer: "max" },
+    { url: `https://historical-forecast-api.open-meteo.com/v1/forecast?${QD}`, path: "daily.precipitation_sum", reducer: "max" },
+  ]), 2, 500, "1", "2026-12-01T00:00:00Z", "2026-12-31T23:59:59Z", 7, 800,
+], 1000n * UNIT));
 
 const final_state = json(await read(address, "list_covers", []));
 fs.mkdirSync(new URL("../deployments/", import.meta.url), { recursive: true });
