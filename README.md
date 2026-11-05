@@ -123,6 +123,30 @@ Near the threshold, honest validators can land on different sides. They then dis
 
 ---
 
+## Live on Studionet
+
+Deployed and run end to end on GenLayer Studionet against **live Open-Meteo data** for Pekanbaru, October 2026. Every transaction finalized with `MAJORITY_AGREE`.
+
+Contract: `0x62D6040b907DBeDCCC77a5C7956AFca61c06C6f7`
+
+| Cover | Trigger | Source readings (ERA5-Land, ERA5, forecast archive) | Median | Result |
+|---|---|---|---|---|
+| #1 | highest daily rainfall ≥ 15 mm | 16.6, 24.3, 16.6 | 16.6 | **TRIGGERED**: farmer claimed 100 units, underwriter got back 908 |
+| #2 | monthly total ≥ 300 mm | 226.3, 184.6, 226.3 | 226.3 | **NOT_TRIGGERED**: underwriter got back 1,008 |
+
+The ERA5 model disagrees with the other two sources on both covers. The median absorbs it, which is exactly the outlier case the design is for.
+
+Negative paths were checked on-chain too: wrong premium, resolving twice, claiming a cover that didn't trigger, and claiming without a position all revert.
+
+All 14 transaction hashes, receipts, and the final contract state are in [`deployments/studionet.json`](deployments/studionet.json). To reproduce with throwaway keys:
+
+```bash
+npm install
+npm run lifecycle:studionet
+```
+
+---
+
 ## Tests
 
 46 direct-mode tests with mocked web and LLM, so they need no node and are deterministic:
