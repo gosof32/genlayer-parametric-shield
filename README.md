@@ -129,7 +129,7 @@ Deployed and run end to end on GenLayer Studionet against **live Open-Meteo data
 
 Contract: `0x62D6040b907DBeDCCC77a5C7956AFca61c06C6f7`
 
-| Cover | Trigger | Source readings (ERA5-Land, ERA5, forecast archive) | Median | Result |
+| Cover | Trigger | Source readings (archive default, archive ERA5, historical forecast) | Median | Result |
 |---|---|---|---|---|
 | #1 | highest daily rainfall ≥ 15 mm | 16.6, 24.3, 16.6 | 16.6 | **TRIGGERED**: farmer claimed 100 units, underwriter got back 908 |
 | #2 | monthly total ≥ 300 mm | 226.3, 184.6, 226.3 | 226.3 | **NOT_TRIGGERED**: underwriter got back 1,008 |
